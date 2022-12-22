@@ -25,6 +25,10 @@ p {
   color: var(--secondary-light);
 }
 
+body {
+  position: relative;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -55,17 +59,32 @@ section {
   gap: 50px;
 }
 
-.nav-title {
-  background-color: var(--primary);
-  margin: 10px 0;
-  padding: 0 10px 0 80px;
-  font-weight: 700;
-}
-
 .nav-bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 100%;
+}
+
+.nav-profile {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 10px;
+  height: 55px;
+  padding: 0 10px 0 30px;
+  background-color: var(--primary);
+}
+
+.nav-picture {
+  height: 40px;
+  width: 40px;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.nav-title {
+  font-weight: 700;
 }
 
 .nav-links {
@@ -231,6 +250,35 @@ section {
 .contact-info .section-content div {
   border-bottom: 3px solid var(--secondary-light);
   margin-top: 10px;
+}
+
+.scroll-top-container {
+  position: absolute;
+  top: 0;
+  right: 30px;
+  height: 100%;
+}
+
+.scroll-top-container:before {
+  content: "";
+  display: block;
+  height: 100vh;
+  pointer-events: none;
+}
+
+.scroll-top-container a {
+  position: sticky;
+  top: 88vh;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.scroll-top-icon {
+  max-width: 30px;
+  max-height: 30px;
+  border: 2px solid var(--secondary-light);
+  border-radius: 25px;
+  padding: 5px;
 }
 
 @media only screen and (max-width: 768px) {

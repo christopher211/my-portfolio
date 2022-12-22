@@ -22,8 +22,13 @@
   <body>
     <header>
       <nav class="nav-bar">
-        <div class="nav-title">
-          <h1>CONG, PHAM</h1>
+        <div class="nav-profile">
+          <div class="nav-picture">
+            <img src="./assets/images/building.jpg" alt="profile picture" />
+          </div>
+          <div class="nav-title">
+            <h1>CONG, PHAM</h1>
+          </div>
         </div>
         <input id="nav-toggle" type="checkbox" />
         <label class="nav-toggle-container" for="nav-toggle">
@@ -32,7 +37,7 @@
         <ul class="nav-links">
           <li class="nav-item"><a href="#about-me">About Me</a></li>
           <li class="nav-item"><a href="#works">Works</a></li>
-          <li class="nav-item"><a href="#contect-me">Contact Me</a></li>
+          <li class="nav-item"><a href="#contact-me">Contact Me</a></li>
           <li class="nav-item"><a href="#resume">Resume</a></li>
         </ul>
       </nav>
@@ -107,18 +112,32 @@
           </div>
         </div>
       </section>
-      <section class="contact-info">
+      <section id="contact-me" class="contact-info">
         <div class="section-title">
           <h2>Contact Me</h2>
         </div>
         <div class="section-content">
           <div>123.456.7890</div>
-          <div>chrispham211@gmail.com</div>
-          <div>GitHub</div>
-          <div>LinkedIn</div>
-          <div>Skype</div>
+          <div>
+            <a href="mailto::chrispham211@gmail.com">chrispham211@gmail.com</a>
+          </div>
+          <div><a href="https://github.com/christopher211">GitHub</a></div>
+          <div>
+            <a href="https://www.linkedin.com/in/thanhpham211/">LinkedIn</a>
+          </div>
+          <div><a href="skype:chrispham211?chat">Skype</a></div>
         </div>
       </section>
+
+      <div class="scroll-top-container">
+        <a href="#" role="button" aria-label="Scroll to top">
+          <img
+            class="scroll-top-icon"
+            src="./assets/images/arrow-up.png"
+            alt="go back to top"
+          />
+        </a>
+      </div>
     </main>
 
     <footer></footer>
